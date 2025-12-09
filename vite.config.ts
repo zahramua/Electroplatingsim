@@ -6,6 +6,8 @@ import runtimeErrorOverlay from "@replit/vite-plugin-runtime-error-modal";
 import { metaImagesPlugin } from "./vite-plugin-meta-images";
 
 export default defineConfig({
+  // IMPORTANT: Set base for GitHub Pages project site
+  base: "/Electroplatingsim/",
   plugins: [
     react(),
     runtimeErrorOverlay(),
@@ -35,7 +37,9 @@ export default defineConfig({
       plugins: [],
     },
   },
+  // Your app's source root
   root: path.resolve(import.meta.dirname, "client"),
+  // Build output directory (this is what we'll deploy)
   build: {
     outDir: path.resolve(import.meta.dirname, "dist/public"),
     emptyOutDir: true,
