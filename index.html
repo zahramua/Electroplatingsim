@@ -1,25 +1,28 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
-
-    <meta property="og:title" content="Electroplating Lab" />
-    <meta property="og:description" content="Interactive electroplating simulation: Silver Anode to Copper Cathode." />
-    <meta property="og:type" content="website" />
-    <meta property="og:image" content="https://replit.com/public/images/opengraph.png" />
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:site" content="@replit" />
-    <meta name="twitter:title" content="Electroplating Lab" />
-    <meta name="twitter:description" content="Interactive electroplating simulation: Silver Anode to Copper Cathode." />
-    <meta name="twitter:image" content="https://replit.com/public/images/opengraph.png" />
-
-    <!-- Use relative path so it works on project sites -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1"
+    />
+    <title>Electroplating Lab</title>
     <link rel="icon" type="image/png" href="favicon.png" />
+    <style>
+      html, body { margin: 0; height: 100%; background: #111; color: #0ff; font-family: system-ui, sans-serif; }
+      .wrap { display: grid; place-items: center; height: 100vh; text-align: center; padding: 24px; }
+      .note { color: #9cf; margin-top: 8px; font-size: 0.95rem; }
+      a { color: #9cf; }
+    </style>
   </head>
   <body>
-    <div id="root"></div>
-    <!-- Use relative path; Vite will rewrite this when building -->
-    <script type="module" src="src/main.tsx"></script>
+    <div class="wrap">
+      <h1>Electroplating Lab</h1>
+      <p>Your site is live.</p>
+      <p class="note">
+        We disabled the complex build temporarily so this page loads without errors.<br/>
+        When you’re ready, we can re-enable the Vite build and show your full app.
+      </p>
+    </div>
   </body>
 </html>
